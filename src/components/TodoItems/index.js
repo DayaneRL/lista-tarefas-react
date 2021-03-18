@@ -4,7 +4,7 @@ class TodoItems extends Component{
     constructor(props){
         super(props);
         this.state = {
-          // status: 'Fazer'
+
         }
         this.delete = this.delete.bind(this);
         this.changeStatus = this.changeStatus.bind(this);
@@ -17,10 +17,9 @@ class TodoItems extends Component{
     changeStatus( element, key){
         if(element.value == key && element.className=="unchecked"){
             element.className="checked";
-            element.innerHTML  = 'Feito';
+            
         }else if(element.value == key && element.className=="checked"){
             element.className="unchecked";
-            element.innerHTML  = 'Fazer';
         }
     }
 
@@ -33,10 +32,13 @@ class TodoItems extends Component{
                     {this.props.lista.map((item)=>{
                         return(
                             <li key={item.key}>{item.text}
-                                    <button className="todo-del" onClick={ () => this.delete(item.key)}>Excluir</button>
+                                    <button className="todo-del" onClick={ () => this.delete(item.key)}>
+                                    </button>
+                                
                                 
                                 <button className="unchecked" value={item.key}
-                                            onClick={(e) => this.changeStatus( e.target, item.key)}>Fazer</button>
+                                            onClick={(e) => this.changeStatus( e.target, item.key)}>
+                                </button>
                                 
                                 </li>
                             

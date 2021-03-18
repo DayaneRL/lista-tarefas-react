@@ -59,33 +59,33 @@ h2, h3{
 }
 
 .todo-del{
-    font-family: 'DM Mono', monospace;
-    background-color: #000;
+    cursor: pointer;
     float: right;
-    border: none;
-    padding: 3px 6px;
-    border-radius: 10px;
-    color: #fff;
+    border: 0;
+    margin: 0 5px;
+    width: 15px;
+    height: 20px;
+    background-image: url('assets/times-solid.svg');
+    background-repeat: no-repeat, repeat;
 }
 
 .unchecked{
-    background-color: #fff;
     float: right;
-    color: #000;
-    font-family: 'DM Mono', monospace;
-    border: 1px solid gray;
-    padding: 2px 6px;
-    border-radius: 10px;
-    
+    border: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-image: url('assets/check-circle-regular.svg');
 }
 .checked{
-    background-color: #000;
     float: right;
-    color: #fff;
-    font-family: 'DM Mono', monospace;
-    border: none;
-    padding: 3px 6px;
-    border-radius: 10px;
+    border: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-image: url('assets/check-circle-solid.svg');
 }
 
 .div-box{
